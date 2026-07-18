@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>★彡 FELIZ CUMPLE 彡★</title>
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    overflow-x: hidden;
+    background: repeating-linear-gradient(
+      45deg,
+      #ff00c8,
+      #ff00c8 20px,
+      #00e5ff 20px,
+      #00e5ff 40px
+    );
+    background-attachment: fixed;
+    font-family: 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+  }
+
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .marco {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    background: #fff200;
+    border: 10px dashed #ff0000;
+    border-radius: 25px;
+    padding: 30px 25px 40px;
+    box-shadow:
+      0 0 0 6px #000,
+      0 0 40px 10px rgba(255, 0, 200, 0.8);
+    text-align: center;
+    animation: tambalear 3s ease-in-out infinite;
+  }
+
+  @keyframes tambalear {
+    0%, 100% { transform: rotate(-1deg); }
+    50% { transform: rotate(1deg); }
+  }
+
+  .marquee-wrap {
+    background: #000;
+    color: #0f0;
+    font-weight: 700;
+    padding: 6px 0;
+    margin: -30px -25px 20px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: 4px solid #ff0000;
+  }
+
+  .marquee-wrap span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 9s linear infinite;
+  }
+
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  h1 {
+    font-size: clamp(1.8rem, 7vw, 2.8rem);
+    margin: 10px 0;
+    color: #ff0000;
+    text-shadow:
+      3px 3px 0 #0000ff,
+      -2px -2px 0 #00ff00,
+      0 0 15px #fff;
+    animation: parpadeo 1s steps(2, start) infinite;
+  }
+
+  @keyframes parpadeo {
+    50% { opacity: 0.55; }
+  }
+
+  .emoji-fila {
+    font-size: 2.5rem;
+    margin: 5px 0 15px;
+  }
+  .emoji-fila span {
+    display: inline-block;
+    animation: rebote 1.4s ease-in-out infinite;
+  }
+  .emoji-fila span:nth-child(2) { animation-delay: 0.15s; }
+  .emoji-fila span:nth-child(3) { animation-delay: 0.3s; }
+  .emoji-fila span:nth-child(4) { animation-delay: 0.45s; }
+  .emoji-fila span:nth-child(5) { animation-delay: 0.6s; }
+
+  @keyframes rebote {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-18px) rotate(15deg); }
+  }
+
+  p.texto {
+    font-size: 1.15rem;
+    color: #1a0033;
+    background: #fff;
+    border: 3px solid #000;
+    border-radius: 12px;
+    padding: 14px;
+    line-height: 1.5;
+    box-shadow: 4px 4px 0 #000;
+  }
+
+  .nombre {
+    color: #d900ff;
+    font-weight: 700;
+  }
+
+  .boton {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 20px 34px;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff200;
+    background: linear-gradient(180deg, #ff2e2e, #b30000);
+    border: 5px solid #000;
+    border-radius: 60px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 8px 0 #4d0000, 0 15px 25px rgba(0,0,0,0.5);
+    transform: translateY(0);
+    transition: transform 0.1s;
+    animation: pulso 0.9s ease-in-out infinite;
+  }
+
+  .boton:active {
+    transform: translateY(6px);
+    box-shadow: 0 2px 0 #4d0000;
+  }
+
+  @keyframes pulso {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+  }
+
+  .footer-cutre {
+    margin-top: 22px;
+    font-size: 0.8rem;
+    color: #0000aa;
+    font-weight: 700;
+  }
+
+  .estrella {
+    position: fixed;
+    font-size: 1.8rem;
+    top: -50px;
+    animation: caer linear infinite;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  @keyframes caer {
+    to { transform: translateY(110vh) rotate(360deg); }
+  }
+
+  .sello {
+    position: absolute;
+    top: -25px;
+    right: -20px;
+    background: #00ff00;
+    color: #000;
+    border: 4px solid #000;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transform: rotate(15deg);
+    line-height: 1.1;
+    box-shadow: 3px 3px 0 #000;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- decoracion cayendo, generado con JS abajo -->
+
+<div class="marco">
+  <div class="sello">¡GRATIS<br>PARA TI!</div>
+
+  <div class="marquee-wrap">
+    <span>★彡 FELIZ CUMPLEAÑOS, KAMIKAZE 彡★ ★彡 PREPÁRATE PARA CAER AL VACÍO 彡★ ★彡 ESTO NO ES UN VIRUS, LO PROMETO 彡★&nbsp;&nbsp;&nbsp;&nbsp;</span>
+  </div>
+
+  <div class="emoji-fila">
+    <span>🎉</span><span>🪂</span><span>🎂</span><span>😱</span><span>🎉</span>
+  </div>
+
+  <h1>¡¡¡FELIZ CUMPLEAÑOS!!!</h1>
+
+  <p class="texto">
+    Querid@ <span class="nombre">Tonoto</span>:<br><br>
+    Como regalo HAS decidido que celebres tu nueva vuelta al sol
+    tirándote de un puente atado con una goma 🌉😅<br><br>
+    Es totalmente seguro*, muy recomendable y sobre todo,
+    <strong>ya está pagado</strong> — así que no hay excusa.<br><br>
+    <small>*seguridad no garantizada por esta página web hecha en 20 minutos</small>
+  </p>
+
+  <a class="boton" href="https://www.yumping.com/shop-BagSF.php?cod=61b993d09990caf62c0774b792f8b5ec" target="_blank" rel="noopener">
+    👉 PINCHA AQUÍ PARA CANJEAR TU CAÍDA LIBRE 👈
+  </a>
+
+  <div class="footer-cutre">
+    hecho con mucho amor, cero presupuesto y Comic Sans
+  </div>
+</div>
+
+<script>
+  // Lluvia de estrellitas
+  const simbolos = ['★', '✦', '🎉', '✨', '🪂'];
+  const total = 28;
+
+  for (let i = 0; i < total; i++) {
+    const el = document.createElement('div');
+    el.className = 'estrella';
+    el.textContent = simbolos[Math.floor(Math.random() * simbolos.length)];
+    el.style.left = Math.random() * 100 + 'vw';
+    el.style.animationDuration = (4 + Math.random() * 5) + 's';
+    el.style.animationDelay = (Math.random() * 6) + 's';
+    el.style.color = ['#ff00c8', '#00e5ff', '#fff200', '#ff0000', '#00ff00'][Math.floor(Math.random()*5)];
+    document.body.appendChild(el);
+  }
+</script>
+
+</body>
+</html>
